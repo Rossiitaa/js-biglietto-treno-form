@@ -30,12 +30,12 @@ if ((userKm < 0) || (userAge <= 0)) {
         document.querySelector('#user-code').innerHTML = (Math.floor(Math.random()*100)+1);
         if (userAge < 18) {
         let DiscountedPrice = NotDiscountedPrice - NotDiscountedPrice * 15 / 100;
-        document.querySelector('#price-ticket').innerHTML = 'Because you are a minor you received a discount, the price of the discounted ticket is ' + DiscountedPrice.toFixed(2);
+        document.querySelector('#price-ticket').innerHTML = 'Because you are a minor you received a discount, the price of the discounted ticket is ' + DiscountedPrice.toFixed(2) + "€";
     } else if (userAge >= 65) {
         let DiscountedPrice = NotDiscountedPrice - NotDiscountedPrice * 35 / 100; 
-        document.querySelector('#price-ticket').innerHTML = 'Since you are over 65 years old you received a discount, the price of the discounted ticket is ' + DiscountedPrice.toFixed(2);
+        document.querySelector('#price-ticket').innerHTML = 'Since you are over 65 years old you received a discount, the price of the discounted ticket is ' + DiscountedPrice.toFixed(2) + "€";
     } else {
-        document.querySelector('#price-ticket').innerHTML = 'The price of your ticket is ' + NotDiscountedPrice.toFixed(2);
+        document.querySelector('#price-ticket').innerHTML = 'The price of your ticket is ' + NotDiscountedPrice.toFixed(2) + "€";
     }
     }
 })
