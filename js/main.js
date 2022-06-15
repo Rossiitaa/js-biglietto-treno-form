@@ -22,7 +22,7 @@ submit.addEventListener('click',function () {
 
 // controllo che i dati inseriti siano corretti 
 if ((userKm < 0) || (userAge <= 0)) {
-    alert ('Error, number not accepted, reload the page');
+    alert ('Error, incorrect data, reload the page');
     // inserisco gli sconti in base all'età
     } else {
         document.querySelector('#ticket-name').innerHTML = userDates;
